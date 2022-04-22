@@ -4,23 +4,23 @@ using namespace std;
 
 int main(){
 
-    string nombre,apellido1,apellido2,correo;
+    string nombres,paterno,materno,resultado;
 
-    cout<<"Nombre: ";getline(cin,nombre);
-    cout<<"Apellido paterno: ";getline(cin,apellido1);
-    cout<<"Apellido materno: ";getline(cin,apellido2);
+    cout<<"nombres: ";getline(cin,nombres);
+    cout<<"Apellido paterno: ";getline(cin,paterno);
+    cout<<"Apellido materno: ";getline(cin,materno);
 
-    correo = nombre.substr(0,1);
-    correo = correo.append(apellido1);
-    correo = correo.append(apellido2.substr(0,1));
+    resultado = nombres.substr(0,1);
+    resultado = resultado.append(paterno);
+    resultado = resultado.append(materno.substr(0,1));
 
-    int tamanio = correo.size();
+    int tamanio = resultado.size();
     for(int i=0;i<tamanio;i++){
-        correo[i] = tolower(correo[i]);
+        resultado[i] = tolower(resultado[i]);
     }
-    correo = correo.append("@unsa.edu.pe");
+    resultado = resultado.append("@unsa.edu.pe");
 
-    cout<<correo;
+    cout<<resultado;
 
     return 0;
 }
