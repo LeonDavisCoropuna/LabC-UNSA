@@ -3,13 +3,13 @@
 using namespace std;
 
 int main(){
-    int aux,suma=0;
+    int num,negativos=0;
     for(int i=0;i<10;i++){
-        cout<<"Escribe un numero: ";cin>>aux;
-        if(aux < 0){
-            suma += aux;
+        cout<<"Escribe un numero: ";cin>>num;
+        if(num < 0){
+            negativos += num;
         }
     }
-    cout<<suma;
+    cout<<negativos;
     return 0;
 }
