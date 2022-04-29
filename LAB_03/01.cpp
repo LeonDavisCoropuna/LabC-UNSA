@@ -1,10 +1,10 @@
-
-//EJERCICIO 1
 /*
 1. Hacer un programa que sin usar la función pow(), pero por medio de una
 función, calcule la potencia de un número (ambos números ingresados por
 teclado).
 */
+
+//EJERCICIO 1
 
 #include<iostream>
 
