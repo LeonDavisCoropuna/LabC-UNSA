@@ -21,4 +21,3 @@ cout<<matriz[i]<<" ";
 return 0;
 }
 
-5. Implemente
