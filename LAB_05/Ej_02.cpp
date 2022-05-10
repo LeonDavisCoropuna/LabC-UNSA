@@ -1,3 +1,4 @@
+ 
 #include<iostream>
 #include<ctime>
  
@@ -28,3 +29,18 @@ int main(){
     delete []vector1;
     delete []vector2;
     return 0;
+}
+ 
+void mostrar(float *vector){
+    for(int i=0;i<3;i++){
+        cout<<*(vector+i)<<"  ";
+    }
+    cout<<endl;
+}
+int sumar(float *vector,float *vector2){
+    int suma=0;
+    for(int i=0;i<3;i++){
+        suma += vector[i]*vector2[i];
+    }
+    return suma;
+}
