@@ -1,41 +1,13 @@
+#include "area.h"
 #include <iostream>
-#include "matriz.h"
-#include <stdfix.h>
-#include <ctime>
 
 using namespace std;
 
+int main(){
 
-Matriz::Matriz(){}
-Matriz::~Matriz(){}
+    Area nuevo(15,6);
+    nuevo.perimetro();
+    nuevo.area();
 
-void Matriz::ingresarDatos(){
-    srand(time(NULL));
-    for(int i=0;i<3;i++){
-        for(int j=0;j<3;j++){
-            matriz[i][j] = 1 + rand() % (10-1);
-        }
-    }
+    return 0;
 }
-void Matriz::mostrar(){
-    for(int i=0;i<3;i++){
-        for(int j=0;j<3;j++){
-            cout<<matriz[i][j]<<"  ";
-        }
-        cout<<endl;
-    }
-}
-
-void Matriz::buscar(int x){
-    for(int i=0;i<3;i++){
-        for(int j=0;j<3;j++){
-            if(matriz[i][j] == x){
-                cout<<"Dato encontradon Indice: ["<<i<<"]["<<j<<"]"<<endl;
-
-                return;
-            }
-        }
-    }
-    cout<<"Dato NO encontrado";
-}
-
