@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
 
-    Alumno nuevo(20210691,"LEON FELIPE DAVIS COROPUNA",14.6,11.9,20);
+    Alumno nuevo(20210691,"       LEON FELIPE DAVIS COROPUNA",14.6,11.9,20);
     nuevo.imprimir();
     return 0;
 }
