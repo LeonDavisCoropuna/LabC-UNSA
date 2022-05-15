@@ -14,6 +14,7 @@ class Alumno{
         void imprimir();
         float promedio();
         string estado();
+        string firstName();
 };
 
 #endif
